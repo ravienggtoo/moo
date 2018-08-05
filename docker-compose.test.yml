@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build: .
+   
+  sut:
+    build: .
+    environment:
+      - ENDPOINT=http://app:5000
+    links:
+      - app:app
+    command: /app/bin/python -m unittest

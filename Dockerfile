@@ -1,5 +1,3 @@
-# Comments by dev2
-
 FROM python:3.6-alpine
 
 ENV VENV=/app
